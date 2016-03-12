@@ -4,7 +4,7 @@ header{
   background: $dark-primary;
 
   nav{
-     background-color: red;
+     background-color: $primary;
      text-align: center;
      font-size: 0.9em;
      padding: 20px;
