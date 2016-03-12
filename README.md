@@ -29,6 +29,7 @@ Starter Kit uses a number of open source projects to work properly:
 * [PostCss] - PostCSS is a tool for transforming styles with JS plugins
 * [CSSnext] - Use tomorrow’s CSS syntax, today
 * [Babel] - To transform ES6 js codes to today's code
+* [Font Awsome] - Awsome light weight icon library
 * [Atom Text Editor] - awesome web-git-based text editor
 * [jQuery] - duh
 
@@ -39,3 +40,4 @@ Starter Kit uses a number of open source projects to work properly:
    [PostCSS]: <http://github.com/postcss/postcss>
    [CSSnext]: <http://cssnext.io/>
    [Babel]: <https://babeljs.io/>
+   [Font Awsome]: <http://fortawesome.github.io/Font-Awesome/>

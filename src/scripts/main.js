@@ -4,10 +4,9 @@
 
 	var body = $('body');
 	
-
 	$( document ).ready(function() {
 
-		   
+
 
 	}); //document ready
 

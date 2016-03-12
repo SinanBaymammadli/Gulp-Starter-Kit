@@ -34,7 +34,7 @@ var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
 
 
-// Style Tasks 
+// Style Tasks
 gulp.task('styles', function () {
 
 	var processors = [
@@ -50,7 +50,7 @@ gulp.task('styles', function () {
 				    'ios >= 7',
 				    'android >= 4.4',
 				    'bb >= 10'
-				]})	
+				]})
 		];
 
 	gulp.src(workField +'/styles/main.css')
@@ -102,9 +102,16 @@ gulp.task('html', function() {
 		.pipe(browserSync.stream()); //reload browser
 	});
 
+//Copy
+gulp.task('copy', function() {
+	gulp.src(workField +'/*.*')
+		.pipe(gulp.dest(build +'/'))
+		.pipe(browserSync.stream()); //reload browser
+	});
+
 
 //Watch Task
-gulp.task('serve', ['styles', 'scripts', 'images', 'html'], function() {
+gulp.task('serve', ['styles', 'scripts', 'images', 'html', 'copy'], function() {
 
     browserSync.init({
         server: "./dist",
@@ -112,17 +119,20 @@ gulp.task('serve', ['styles', 'scripts', 'images', 'html'], function() {
     });
 
     // Watch tasks
-	    // watching for styles
-	    gulp.watch(workField +'/styles/**/*', ['styles']);
+	   // watching for styles
+	   gulp.watch(workField +'/styles/**/*', ['styles']);
 
-	    // watching for scripts
-	    gulp.watch(workField +'/scripts/**/*', ['scripts']);
+		// watching for scripts
+		gulp.watch(workField +'/scripts/**/*', ['scripts']);
 
-	    // watching for images
-    	gulp.watch(workField +'/images/**/*', ['images']);
+		// watching for images
+		gulp.watch(workField +'/images/**/*', ['images']);
 
-	    // watching for html
-	    gulp.watch(workField +'/html/**/*', ['html']);
+		// watching for html
+		gulp.watch(workField +'/html/**/*', ['html']);
+
+		// watching for copy
+		gulp.watch(workField +'/*.*', ['copy']);
 	});
 
 //Default Task
