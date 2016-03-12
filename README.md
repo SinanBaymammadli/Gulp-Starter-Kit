@@ -1,9 +1,41 @@
 # Gulp-Starter-Kit
 
-#run this commands
+### Installation
+First install [Node.js] [node.js]
 
-npm install
+Then, you need to install Gulp globally:
 
-npm install gulp -g
+```sh
+$ npm i -g gulp
+```
 
-gulp
+Install npm dependecies:
+
+```sh
+$ npm install
+```
+
+Get Gulp running:
+
+```sh
+$ gulp
+```
+
+### Tech
+
+Starter Kit uses a number of open source projects to work properly:
+
+* [Gulp] - the streaming build system
+* [PostCss] - PostCSS is a tool for transforming styles with JS plugins
+* [CSSnext] - Use tomorrow’s CSS syntax, today
+* [Babel] - To transform ES6 js codes to today's code
+* [Atom Text Editor] - awesome web-git-based text editor
+* [jQuery] - duh
+
+   [node.js]: <http://nodejs.org>
+   [jQuery]: <http://jquery.com>
+   [Gulp]: <http://gulpjs.com>
+   [Atom Text Editor]: <http://atom.io/>
+   [PostCSS]: <http://github.com/postcss/postcss>
+   [CSSnext]: <http://cssnext.io/>
+   [Babel]: <https://babeljs.io/>
