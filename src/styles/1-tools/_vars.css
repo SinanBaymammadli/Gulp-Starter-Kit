@@ -1,0 +1,24 @@
+/* COLORS */
+$dark-primary: #1976D2;
+$primary: #2196F3;
+$light-primary: #BBDEFB;
+$accent: #FF5252;
+$primary-text: #212121;
+$light-text: #ffffff;
+$secondary-text: #727272;
+$divider: #B6B6B6;
+
+/*MEDIA QUERIES*/
+@custom-media --small-viewport (min-width: 320px);
+@custom-media --medium-viewport (min-width: 480px);
+@custom-media --large-viewport (min-width: 760px);
+@custom-media --xlarge-viewport (min-width: 1200px);
+
+
+/*EXAMPLE USAGE FOR MEDIAN QUERIES*/
+/*@media (--small-viewport) {
+  // styles for small viewport
+}*/
+
+/*TRANSITION*/
+$transition: all .2s ease-in-out;

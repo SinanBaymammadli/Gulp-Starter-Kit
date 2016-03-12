@@ -1,0 +1,13 @@
+/* 1 - TOOLS */
+@import '1-tools/normalize';
+@import '1-tools/vars';
+
+/* 2 - Basics */
+@import "2-basics/selection-colors";
+@import "2-basics/typography";
+@import "2-basics/body";
+
+/* 3 - Sections */
+@import '3-sections/header';
+@import '3-sections/footer';
+@import '3-sections/home';
